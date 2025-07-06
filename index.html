@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Лінійне завантаження зображень</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Приклад лінійного завантаження зображень</h1>
+  <p>Прокрутіть вниз або натисніть кнопку, щоб побачити, як зображення завантажуються поступово.</p>
+
+  <button id="loadBtn">Завантажити зображення</button>
+
+  <div class="image-container">
+    <img data-src="https://via.placeholder.com/1200x800.webp?text=Image+1" alt="Image 1" class="lazy" />
+    <img data-src="https://via.placeholder.com/1200x800.webp?text=Image+2" alt="Image 2" class="lazy" />
+    <img data-src="https://via.placeholder.com/1200x800.webp?text=Image+3" alt="Image 3" class="lazy" />
+    <img data-src="https://via.placeholder.com/1200x800.webp?text=Image+4" alt="Image 4" class="lazy" />
+    <img data-src="https://via.placeholder.com/1200x800.webp?text=Image+5" alt="Image 5" class="lazy" />
+  </div>
+
+  <script src="lazy-load.js" defer></script>
+</body>
+</html>
